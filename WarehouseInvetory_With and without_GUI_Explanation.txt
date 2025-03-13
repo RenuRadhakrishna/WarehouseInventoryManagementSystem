@@ -1,0 +1,66 @@
+Explanation of Both Codes: Without GUI & With GUI 🚀
+1️⃣ Without GUI - Console-Based Inventory System (Using AVL Tree, Hash Table & Linked List)
+💡 Key Components:
+✅ AVL Tree → Stores inventory efficiently (sorted order, balanced)
+✅ Hash Table → Enables quick item lookup by name
+✅ Linked List (FIFO Queue) → Tracks expiry order
+
+🔹 How It Works:
+Adding Items:
+
+Items are stored in an AVL Tree (sorted automatically).
+Also added to the Hash Table for quick lookup.
+Added to the Linked List (FIFO Queue) to track expiry.
+Displaying Inventory:
+
+Performs in-order traversal of AVL Tree to show items in sorted order.
+Checking Item Quantity:
+
+Uses Hash Table to get the quantity of any item in O(1) time.
+Removing Expired Items:
+
+FIFO Expiry System removes the oldest added item using Linked List.
+📜 Example Output:
+Current Inventory:
+Apples | Quantity: 50 | Price: 10
+Bananas | Quantity: 30 | Price: 5
+Oranges | Quantity: 40 | Price: 7
+
+Checking Quantity of Bananas: 30
+
+Removing Expired Item: Apples
+📌 Efficient Data Structures:
+
+AVL Tree → Keeps inventory sorted.
+Hash Table → Ensures fast lookups.
+Linked List → Maintains expiry order.
+2️⃣ With GUI - Warehouse Inventory System (Swing-Based UI)
+💡 Features Added in GUI:
+✅ Graphical Interface with JFrame (instead of console output)
+✅ JTable to display inventory items
+✅ Text Fields & Buttons to add and remove items
+✅ JTextArea for tracking expired items
+
+🔹 How It Works:
+1️⃣ User Inputs Item Name, Quantity, Price → Clicks "Add Item" → Item is stored
+2️⃣ Items appear in JTable (Inventory Table)
+3️⃣ Expired items tracked in JTextArea (FIFO order)
+4️⃣ Click "Remove Expired Item" → Oldest item is removed (FIFO queue)
+
+📜 How the Code Works:
+JTable → Displays inventory items.
+JTextField → User enters item details.
+JButton → Adds & removes items from inventory.
+HashMap → Stores items with quantity.
+LinkedList → Maintains FIFO expiry order.
+📜 Example GUI Layout:
+📌 When you run the GUI version, you will see:
+
+Table: Displays all items with name, quantity & price
+Buttons: "Add Item" & "Remove Expired Item"
+Expiry Tracking: List of expired items
+💡 You can click buttons instead of typing commands in the console!
+
+🚀 Which Version is Better?
+🔹 Console-Based Version → Best for fast backend processing.
+🔹 GUI Version → Best for user-friendly interaction & visualization.
